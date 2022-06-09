@@ -1,32 +1,50 @@
-import java.util.scanner;
-class Marksheet{
+package com.company;
+import java.util.*;
 
+public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Scanner cm = new Scanner(system.in);
 
-        System.out.println("Enter Your Name:");
-        string name = cm.next();
+	               // Student class marksheet  //
 
-        System.out.println("Roll No:");
-        int Roll no = cm.next();
+        String name;
 
-        System.out.println("Enter Your Math Marks:");
-        int English = cm.next();
+        int roll_num;
 
-        System.out.println("Enter Your Science Marks:");
-        int Hindi = cm.next();
+        int sub1,sub2,sub3,sub4,sub5,per;
 
-        System.out.println("Enter Your Biology Marks:");
-        int Maths = cm.next();
+        Scanner sc= new Scanner(System.in);
 
-        System.out.println("Enter Your Hindi Marks:");
-        int Science = cm.next();
+        System.out.println("Enter your Name: ");
+        name=sc.nextLine();
 
-        System.out.println("Enter Your English Marks:");
-        int Drawing = cm.next();
+        System.out.println("Enter your Roll no: ");
+        roll_num=sc.nextInt();
 
-        System.out.println("The percentage is = " + percentage + " %")
+        System.out.println("Marks in Maths:");
+        sub1=sc.nextInt();
+
+        System.out.println("Marks in Science:");
+        sub2=sc.nextInt();
+
+        System.out.println("Marks in Hindi:");
+        sub3=sc.nextInt();
+
+        System.out.println("Marks in English:");
+        sub4=sc.nextInt();
+
+        System.out.println("Marks in Biology:");
+        sub5=sc.nextInt();
+
+
+
+                //         Percentage of Student Marks    //
+
+        per=((sub1+sub2+sub3+sub4+sub5)*100)/500;
+
+        System.out.println("Your Name Is: "+ name);
+        System.out.println("Your Roll no Is; "+ roll_num);
+        System.out.println("Percentage of 5 subjects are: "+ %);
+
     }
 }
